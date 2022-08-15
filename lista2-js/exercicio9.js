@@ -5,7 +5,7 @@
 let ultimaFolga = 11,
     dataFunction = new Date();
 
-const DIASTRABALHO = 1,
+const DIASTRABALHO = 6,
       MESES = ['janeiro', 'fevereiro', 'março', 'abril', 'maio',
               'junho', 'julho', 'agosto', 'setembro', 'outubro', 
               'novembro', 'dezembro'];
@@ -14,19 +14,16 @@ const DIASTRABALHO = 1,
 dataFunction.setDate((ultimaFolga+DIASTRABALHO)+1)
 
 //pegando dia, mes e ano da próxima folga:
-let diaFolga = dataFunction.getDate()
-    mesFolga = dataFunction.getMonth()
-    anoFolga = dataFunction.getFullYear();
-
-//testando:
-// console.log(`A próxima folga será dia ${diaFolga} de ${MESES[mesFolga]} de ${anoFolga}`)
+let mesFolga = dataFunction.getMonth()
  
 //loop:
 while (mesFolga < 11 ){
+    //obtendo valores novamente
     diaFolga = dataFunction.getDate()
     mesFolga = dataFunction.getMonth()
     anoFolga = dataFunction.getFullYear()
-    console.log(`A próxima folga será dia ${diaFolga} de ${MESES[mesFolga]} de ${anoFolga}`)
-    // contador += 6 
+    //output
+    console.log(`Dia ${diaFolga} de ${MESES[mesFolga]} de ${anoFolga} será folga.`)
+    //settar outra folga
     newData = dataFunction.setDate((diaFolga)+7)
 }
