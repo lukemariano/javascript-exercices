@@ -22,9 +22,10 @@ quando for z ou Z mudar para @ e $ respectivamente ao invés de {
 
 // Entrada
 
-let string = 'zebra',
+let string = 'Deus',
     contador = 0,
-    novaString = '';
+    novaString = '',
+    descriptografia = '';
 
 //resolução
 for (let indice in string){
@@ -41,3 +42,23 @@ for (let indice in string){
     contador++
 }
 console.log(novaString)
+
+//descriptografia
+
+contador = 0
+
+for (let indice in novaString){
+    AscNumber = novaString.charCodeAt(contador)-1
+    if (AscNumber == 63){
+        descriptografia += 'z'
+    }
+    else if (AscNumber == 35){
+        descriptografia += 'Z'
+    }
+    else{
+        descriptografia += String.fromCharCode(AscNumber)
+    }
+    contador++
+}
+
+console.log(descriptografia)

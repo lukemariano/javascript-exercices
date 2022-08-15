@@ -3,8 +3,7 @@
 // 3 meses a apartir de agosto
 
 let ultimaFolga = 11,
-    dataFunction = new Date(),
-    contador = 0
+    dataFunction = new Date();
 
 const DIASTRABALHO = 1,
       MESES = ['janeiro', 'fevereiro', 'março', 'abril', 'maio',
