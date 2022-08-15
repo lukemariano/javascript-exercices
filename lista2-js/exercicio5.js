@@ -1,6 +1,6 @@
 //Faça um programa que mostre o segundo maior nro da lista 
 
-let numeros = [200, 90, 150, 20],
+let numeros = [200, 190, 150, 20],
     maiorNumero = 0,
     segundoMaiorNumero = 0;
 

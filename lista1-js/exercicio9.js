@@ -12,31 +12,28 @@ Se digitar outro valor deve aparecer: 'Entrada inválida.'
  */
 
 // Entrada
-let entrada = 6;
+let entrada = 1;
 
-//condicionais
-if(entrada >= 1  && entrada <= 7 && typeof entrada == 'number'){
-    if (entrada == 1){
-        console.log('Domingo')
-    }
-    else if (entrada == 2){
-        console.log('Segunda')
-    }
-    else if (entrada == 3){
-        console.log('Terça')
-    }
-    else if (entrada == 4){
-        console.log('Quarta')
-    }
-    else if (entrada == 5){
-        console.log('Quinta')
-    }
-    else if (entrada == 6){
-        console.log('Sexta')
-    }
-    else if (entrada == 7){
-        console.log('Sábado')
-    }
-}else{
-    console.log('Entrada inválida.')
+switch (entrada){
+    case 1:
+        console.log('Domingo');
+        break;
+    case 2:
+        console.log('Segunda');
+        break;
+    case 3:
+        console.log('Terça');
+        break;
+    case 4:
+        console.log('Quarta');
+        break;
+    case 5:
+        console.log('Quinta');
+        break;
+    case 6:
+        console.log('Sexta');
+        break;
+    case 7:
+        console.log('Sábado');
+        break;
 }
