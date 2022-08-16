@@ -1,0 +1,15 @@
+.container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.conteudo{
+    width: 700px;
+    height: fit-content;
+    border-radius: 20px;
+    border: 2px solid rgba(176, 0, 251, 0.881);
+    padding: 10px;
+}
