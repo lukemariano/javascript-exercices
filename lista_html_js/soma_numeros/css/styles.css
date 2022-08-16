@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+main.conteudo {
+    display: flex;
+    flex-direction: column;
+}
+
+.display-resultado {
+    width: 100%;
+    height: 100px;
+    background-color: #666f88;
+    border-radius: 10px;
+    text-align: center;
+}
+
+input#btn-sum {
+    width: 90px;
+    border: none;
+    height: 25px;
+    border-radius: 7px;
+    background-color: darkgray;
+    cursor: pointer;
+}

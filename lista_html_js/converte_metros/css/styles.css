@@ -1,0 +1,105 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+main.conteudo{
+    width: 500px;
+    height: 245px;
+    border: 1px solid #dcdcdc;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    padding: 20px;
+}
+
+.tipo-conversao{
+    width: 65%;
+}
+
+select#box-tipo-conversao {
+    width: 100%;
+    height: 26px;
+    font-size: 12px;
+    background-color: #f4f4f4b5;
+    border: 1px solid #dcdcdc;
+    outline: none;
+}
+/* 
+.box-conversao{
+    
+} */
+
+
+.display-conversao{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    width: 65%;
+}
+
+input#entrada, input#output  {
+    outline: none;
+    height: 35px;
+    text-align: center;
+    border: 1px solid #dcdcdc;
+    width: 100%;
+    font-size: 20px;
+}
+
+select#metros-select, 
+select#centimetros-select{
+    width: 100%;
+    height: 26px;
+    font-size: 12px;
+    background-color: #f4f4f4b5;
+    border: 1px solid #dcdcdc;
+    outline: none;
+}
+
+
+.width-form{
+    width: 100%;
+}
+
+.sinal-de-igual{
+    display: flex;
+    align-items: center;
+}
+
+.formula{
+    width: fit-content;
+    background-color: #fcb100;
+    color: white;
+    border-radius: 2px;
+    padding: 1px;
+}
+
+.flex-formula{
+    font-size: 12px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input#output::-webkit-outer-spin-button,
+input#entrada::-webkit-outer-spin-button,
+input#output::-webkit-inner-spin-button,
+input#entrada::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+

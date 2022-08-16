@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Metros para html</title>
+</head>
+
+<body>
+    <div class="container">
+        <main class="conteudo">
+            <div class="tipo-conversao">
+                <form action="" method="post">
+                    <select name="" id="box-tipo-conversao">
+                        <option value="Comprimento">Comprimento</option>
+                    </select>
+                </form>
+            </div>
+            <div class="display-conversao">
+                <div class="box-conversao">
+                    <form action="" method="post" class="width-form">
+                        <input type="number" name="entrada" id="entrada" onkeyup="converteMetros()">
+                        <select name="metros-select" id="metros-select">
+                            <option value="Metros">Metros</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="sinal-de-igual">
+                    <h2>=</h2>
+                </div>
+                <div class="box-conversao">
+                    <form action="" method="post" class="width-form">
+                        <input type="number" name="output" id="output" onkeyup="converteCentimetros()">
+                        <select name="centimetros-select" id="centimetros-select">
+                            <option value="Centimetros">Centímetros</option>
+                        </select>
+                    </form>
+
+                </div>
+            </div>
+            <div class="flex-formula">
+                <p class="formula">Fórmula</p>
+                <p id="formula-dinamica">comprimento * 100</p>
+            </div>
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
