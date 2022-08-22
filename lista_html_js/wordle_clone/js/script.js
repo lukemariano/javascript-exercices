@@ -1,6 +1,3 @@
-// importando palavras
-import { WORDS } from "./words.js";
-
 // define o número de suposições
 const NUMBER_OF_GUESSES = 6;
 // define o número de tentativas restantes
@@ -218,7 +215,7 @@ const animateCSS = (element, animation, prefix = 'animate__') =>
         const animationName = `${prefix}${animation}`;
         //const node = document.querySelector(element)
         const node = element;
-        node.style.setProperty('--animate-duration', '0.3s');
+        node.style.setProperty('--animate-duration', '1s');
 
         node.classList.add(`${prefix}animated`, animationName);
 
